@@ -3,7 +3,7 @@ let mongoose = require("mongoose")
 let userRouter=require("./Routes/user-routes")
 let blogRouter=require("./Routes/blog-router")
 let app =express();
-var PORT=5000;
+var PORT=process.env.PORT|| 5000
 var cors = require("cors");
 
 app.use(cors());

@@ -77,7 +77,7 @@ module.exports={
         let blogId= req.params.id
         try {
             
-           blog= await Blog.findOneAndUpdate(blogId,{
+           blog= await Blog.findByIdAndUpdate(blogId,{
                 title:title,
                 description:description
             })
